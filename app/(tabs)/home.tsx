@@ -36,7 +36,7 @@ export default function HomeScreen() {
         <Text className="text-text-primary text-2xl font-bold mt-1">Still Here</Text>
       </View>
 
-      <View className="flex-row justify-between mb-10">
+      <View className="flex-row justify-between mb-4">
         {weekDates.map((date, i) => {
           const checked = checkedDates.has(date);
           const isToday = date === new Date().toISOString().split('T')[0];
@@ -53,6 +53,13 @@ export default function HomeScreen() {
             </View>
           );
         })}
+      </View>
+
+      <View className="flex-row justify-between items-center mb-8 px-1">
+        <Text className="text-text-muted text-xs">이번 주</Text>
+        <Text className="text-text-secondary text-xs">
+          총 <Text className="text-primary font-semibold">{records.length}일</Text> 버텨왔어
+        </Text>
       </View>
 
       <View className="flex-1 items-center justify-center gap-4">
