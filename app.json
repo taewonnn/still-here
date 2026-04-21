@@ -1,27 +1,29 @@
 {
   "expo": {
-    "name": "still-here",
+    "name": "Still Here",
     "slug": "still-here",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0f0f0f"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.stillhere.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0f0f0f"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.stillhere.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +32,10 @@
       "expo-router",
       "expo-font",
       "expo-asset"
-    ]
+    ],
+    "scheme": "still-here",
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
