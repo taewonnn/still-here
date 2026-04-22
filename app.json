@@ -36,6 +36,12 @@
     "scheme": "still-here",
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2342c02a-9709-4f0f-9572-296685bcb1cd"
+      }
     }
   }
 }
