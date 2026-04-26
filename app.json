@@ -23,7 +23,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.stillhere.app"
+      "package": "com.stillhereapp.android"
     },
     "web": {
       "favicon": "./assets/favicon.png"
